@@ -7,6 +7,7 @@ import { AccueilAdminComponent } from './components/admin/accueil-admin/accueil-
 import { HeaderComponent } from './components/menu/header/header.component';
 import { FooterComponent } from './components/menu/footer/footer.component';
 import { AccueilComponent } from './components/pages/accueil/accueil.component';
+import { AuthentificationComponent } from './components/auth/authentification/authentification.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AccueilComponent } from './components/pages/accueil/accueil.component';
     AccueilAdminComponent,
     HeaderComponent,
     FooterComponent,
-    AccueilComponent
+    AccueilComponent,
+    AuthentificationComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import {DataTablesModule} from 'angular-datatables';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AccueilAdminComponent } from './components/admin/accueil-admin/accueil-admin.component';
-import { HeaderComponent } from './components/menu/header/header.component';
 import { FooterComponent } from './components/menu/footer/footer.component';
 import { AccueilComponent } from './components/pages/accueil/accueil.component';
 import { AuthentificationComponent } from './components/auth/authentification/authentification.component';
+import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
+import { HeaderComponent } from './components/menu/header/header.component';
+import { PubliciteComponent } from './components/pages/publicite/publicite.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { AuthentificationComponent } from './components/auth/authentification/au
     HeaderComponent,
     FooterComponent,
     AccueilComponent,
-    AuthentificationComponent
+    AuthentificationComponent,
+    SidebarComponent,
+    PubliciteComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DataTablesModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

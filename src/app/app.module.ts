@@ -12,6 +12,10 @@ import { AuthentificationComponent } from './components/auth/authentification/au
 import { SidebarComponent } from './components/admin/sidebar/sidebar.component';
 import { HeaderComponent } from './components/menu/header/header.component';
 import { PubliciteComponent } from './components/pages/publicite/publicite.component';
+import { ContactComponent } from './components/pages/contact/contact.component';
+import { AnnoncesComponent } from './components/pages/annonces/annonces.component';
+import { ConfidentialiteComponent } from './components/pages/confidentialite/confidentialite.component';
+import { UtilisationComponent } from './components/pages/utilisation/utilisation.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { PubliciteComponent } from './components/pages/publicite/publicite.compo
     AccueilComponent,
     AuthentificationComponent,
     SidebarComponent,
-    PubliciteComponent
+    PubliciteComponent,
+    ContactComponent,
+    AnnoncesComponent,
+    ConfidentialiteComponent,
+    UtilisationComponent
   ],
   imports: [
     BrowserModule,

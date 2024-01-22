@@ -107,21 +107,55 @@ text-align: justify;
 }
 
 /* section objets perdus récente */
-/* 
-#imageAnnonce{
-    height: 3vh !important;
-
-} */
+.main{
+    background-color: #001F3F !important; 
+    min-height: 0 !important; 
+}
+ 
+#content-objet img{
+border: 2px solid violet !important;
+} 
 #content{
     margin: 20px !important;
 }
+.row-container{
+    margin:0 auto !important;
+      width: 100% !important;
+}
+.row-container h3{
+    color: white;
+}
+
+.container-card {
+    /* border: 2px solid yellowgreen; */
+    width:20%;
+    box-shadow: 2px 2px 4px gray;
+    margin: 30px auto !important;
+}
+.element-card{
+    background-color: #ffffff;
+    height: 80% !important;
+    border-top: 2px solid #001F3F;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0.5;
+    border-bottom-left-radius: 0.5;
+}
 .card-body img{
-    border: 1px solid maroon !;
-    height: 10rem;
+    height:10rem;
+border-top-left-radius: 0.5rem;
+border-top-right-radius: 0.5rem;
 }
 #content-objet {
-    border: 6px solid rgb(128, 64, 0);
+    border: 6px solid rgb(128, 64, 0) !important;
     min-height: 25rem;
+}
+.content-icon{
+    margin: 0 auto !important; 
+}
+.content-icon span{
+    
+    border: 2px solid red;
 }
 
 .scroll-to-top{
@@ -133,10 +167,8 @@ text-align: justify;
 
 /* ce que vous devez savoir */
 .quote{
-    border: 2px solid #e60c0c !important;
-    /* background-color: #001F3F; */
-
-    height: 25rem !important;
+    margin-top: 3%;
+    margin-bottom: 2%;
 }
 .quote h3{
     line-height: 1;
@@ -188,6 +220,10 @@ margin-left: 11.5rem !important;
     margin: 2rem 0 1rem;
     color: #001F3F;
 }
+.card-quote h5:hover{
+   
+    color: #ffffff;
+}
 .card-quote p{
 font-size: 0.85rem;
 }
@@ -199,7 +235,7 @@ font-size: 0.85rem;
 
 /*section déclaration objets  trouvé */
 .declaration {
-    border: 2px solid rgb(21, 0, 255) !important;
+    /* border: 2px solid rgb(21, 0, 255) !important; */
     background-image: url('../../../../assets/images/alerteObjet.png');
     width: 100%;
     height: 80%;
@@ -214,10 +250,11 @@ font-size: 0.85rem;
     gap: 5rem;
 }
 .declaration .declaration-left {
-    border: 2px solid green ;
+    /* border: 2px solid green ; */
+
 }
 .declaration .declaration-right {
-    border: 2px solid rgb(215, 21, 186) ;
+    /* border: 2px solid rgb(215, 21, 186) ; */
     background-color: #fff;
     border-radius: 1rem;
  
@@ -236,12 +273,14 @@ font-size: 0.85rem;
     font-size: 12px;
 }
 .declaration .declaration-right form input {
-    background-color: #001f3f76;
+    /* background-color: #001f3f76; */
     color: white;
-    padding:5%;
+    /* padding:5%; */
     width: 100%;
     border-radius: 0;
+    border: none;
     border-bottom: 3px solid #001F3F;
+
 
 }
 .declaration .declaration-right form  #imageObjet{
@@ -252,7 +291,22 @@ font-size: 0.85rem;
     color: white;
 
 }
-@media screen and (max-width: 535px){
+.publicite{
+    border: 2px solid red;
+    /* mediaquiries */
+    /* height:9.1rem; */
+    height:35.9rem;
+    margin: 5% auto;
+}
+@media screen and (max-width:900px){
+    .publicite{
+        /* mediaquiries */
+        height:9.1rem;
+
+    }
+}
+@media screen and (max-width: 768px){
+   
     .navbouton button{
         font-size: 14px;
     }
@@ -273,7 +327,7 @@ font-size: 0.85rem;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         width: 25.8rem !important;
-        border: 2px solid blue !important;
+        /* border: 2px solid blue !important; */
         gap: 1.2rem !important;
         width: 80% !important;
         margin-left:-12rem!important;
@@ -282,7 +336,7 @@ font-size: 0.85rem;
         
     }
    .sectionAccueil{
-    border: 2px solid orangered;
+    /* border: 2px solid orangered; */
     margin-top: -48rem !important;
    }
    #about-text .card-text{
